@@ -1,0 +1,61 @@
+.menuIndex{
+    flex-direction: row;
+    @include media-query-mobile(){
+        flex-direction: column;
+    }
+}
+.btn-primary{
+    background-color: darkblue;
+    border: 3px solid white;
+    margin: 5px;
+}
+main{
+    @include media-query-mobile(){
+        margin: 0 15px;
+    }
+    @include media-query-PC(){
+        margin: 0 100px;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .mb-3{
+            width: 300px;
+        }
+    }
+
+    .mainNV{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: auto;
+        column-gap: 5px;
+        row-gap: 5px;
+        .NV{
+            background-color: darkblue;
+            border: 1px solid white;
+            border-radius: 12px;
+            margin: 30px;
+            padding: 10px;
+        }
+    }
+    .mainSB{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: auto;
+        column-gap: 5px;
+        row-gap: 5px;
+        .SB{
+            background-color: darkblue;
+            border: 1px solid white;
+            border-radius: 12px;
+            margin: 30px;
+            padding: 10px;
+            ul{
+                padding-left: 0;
+            }
+        }    
+    }
+}

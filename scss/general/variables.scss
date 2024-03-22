@@ -1,0 +1,22 @@
+@mixin media-query-mobile{
+    @media (max-width: 480px){
+        @content; 
+    }
+}
+
+@mixin media-query-PC{
+    @media (min-width: 481px){
+        @content; 
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        filter: blur(20px);
+    }
+    10%{
+        opacity: 1;
+        filter: brightness(2) blur(10px);
+    }
+}
